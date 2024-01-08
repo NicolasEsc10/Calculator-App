@@ -1,0 +1,13 @@
+.calculator_screen {
+  width: 500px;
+  height: 100px;
+  margin: 20px 0;
+  background-color: $standard-screen-background;
+  color: $standard-white-text;
+  border-radius: 10px;
+  font-size: 45px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 30px;
+}

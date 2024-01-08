@@ -1,0 +1,42 @@
+.button_style {
+  height: 55px;
+  margin: 7px 15px;
+  padding-top: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1 1;
+  font-size: 32px;
+  border-radius: 10px;
+  background-color: $standard-key-background;
+  box-shadow: 0 4px $standard-key-shadow;
+  color: $standard-dark-text;
+  cursor: pointer;
+  user-select: none;
+  transition: background-color 0.1s ease;
+
+  &:hover {
+    background-color: $standard-key-hover-background;
+  }
+}
+
+.delete,
+.reset {
+  background-color: $standard-delete-key-background;
+  box-shadow: 0 5px $standard-delete-key-shadow;
+  color: $standard-white-text;
+
+  &:hover {
+    background-color: $standard-delete-key-hover-background;
+  }
+}
+
+.result {
+  background-color: $standard-secondary-key-background;
+  box-shadow: 0 5px $standard-secondary-key-shadow;
+  color: $standard-white-text;
+
+  &:hover {
+    background-color: $standard-secondary-key-hover-background;
+  }
+}

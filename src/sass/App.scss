@@ -1,0 +1,204 @@
+.App {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: $standard-main-background;
+  color: $standard-white-text;
+  font-weight: 700;
+
+  &.light {
+    background-color: $light-main-background;
+    color: $light-dark-text;
+
+    // Button light style
+    .button_container {
+      background-color: $light-secondary-main-background;
+    }
+
+    .button_style {
+      background-color: $light-key-background;
+      box-shadow: 0 4px $light-key-shadow;
+      color: $light-dark-text;
+
+      &:hover {
+        background-color: $light-key-hover-background;
+      }
+    }
+
+    .delete,
+    .reset {
+      background-color: $light-delete-key-background;
+      box-shadow: 0 5px $light-delete-key-shadow;
+      color: $light-white-text;
+
+      &:hover {
+        background-color: $light-delete-key-hover-background;
+      }
+    }
+
+    .result {
+      background-color: $light-secondary-key-background;
+      box-shadow: 0 5px $light-secondary-key-shadow;
+      color: $light-white-text;
+
+      &:hover {
+        background-color: $light-secondary-key-hover-background;
+      }
+    }
+
+    // Screen light style
+
+    .calculator_screen {
+      background-color: $light-screen-background;
+      color: $light-dark-text;
+    }
+  }
+
+  &.alternative {
+    background-color: $alternative-main-background;
+    color: $alternative-yellow-text;
+
+    // Button light style
+
+    .button_container {
+      background-color: $alternative-secondary-main-background;
+    }
+
+    .button_style {
+      background-color: $alternative-key-background;
+      box-shadow: 0 4px $alternative-key-shadow;
+      color: $alternative-yellow-text;
+
+      &:hover {
+        background-color: $alternative-key-hover-background;
+      }
+    }
+
+    .delete,
+    .reset {
+      background-color: $alternative-delete-key-background;
+      box-shadow: 0 5px $alternative-delete-key-shadow;
+      color: $alternative-white-text;
+
+      &:hover {
+        background-color: $alternative-delete-key-hover-background;
+      }
+    }
+
+    .result {
+      background-color: $alternative-secondary-key-background;
+      box-shadow: 0 5px $alternative-secondary-key-shadow;
+      color: $alternative-dark-text;
+
+      &:hover {
+        background-color: $alternative-secondary-key-hover-background;
+      }
+    }
+
+    // Screen light style
+
+    .calculator_screen {
+      background-color: $alternative-screen-background;
+      color: $alternative-yellow-text;
+    }
+  }
+}
+
+.calculator_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .header_calculator {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+
+    .text_calc {
+      font-size: 24px;
+    }
+
+    .toggle_container {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: flex-end;
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: 1.5px;
+
+      & > p {
+        margin: 0 25px 4px 0;
+      }
+
+      .toggle_button {
+        display: flex;
+        flex-direction: column;
+
+        .toggle_button_numbers {
+          justify-content: space-evenly;
+          margin: 0 -7px 5px;
+          display: flex;
+          flex-direction: row;
+        }
+      }
+    }
+  }
+
+  .button_container {
+    width: 500px;
+    height: 400px;
+    padding: 15px;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    background-color: $standard-secondary-main-background;
+
+    .calculator_row {
+      margin: 6px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}
+
+@media (max-width: 375px) {
+  .calculator_container .button_container {
+    width: 300px;
+    height: 330px;
+    padding: 15px;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(223, 31%, 20%);
+  }
+
+  .calculator_screen {
+    width: 300px;
+    height: 80px;
+  }
+
+  .button_style {
+    height: 48px;
+    margin: 4px 4px;
+    padding-top: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1 1;
+    font-size: 26px;
+    border-radius: 5px;
+  }
+}
+
+footer{
+  position: absolute;
+  bottom:  5px
+}

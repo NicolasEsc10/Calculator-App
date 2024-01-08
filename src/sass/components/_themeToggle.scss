@@ -1,0 +1,58 @@
+.theme-toggle {
+  background: $standard-secondary-main-background;
+  border-radius: 20px;
+  padding: 0 3px;
+  position: relative;
+  cursor: pointer;
+  outline: none;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+
+  &.light {
+    background: $light-secondary-main-background;
+  }
+  &.alternative {
+    background: $alternative-secondary-main-background;
+  }
+}
+
+.custom-radio-btn {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.custom-radio-btn input {
+  display: none;
+}
+
+.custom-radio-btn input:checked + .checkmark {
+  opacity: 1;
+}
+.custom-radio-btn .checkmark {
+  width: calc(100% - 6px);
+  height: calc(100% - 6px);
+  border-radius: 50%;
+  display: inline-block;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.checkmark {
+  background-color: $standard-secondary-key-background;
+
+  .theme-toggle.light & {
+    background: $light-secondary-key-background;
+  }
+
+  .theme-toggle.alternative & {
+    background: $alternative-secondary-key-background;
+  }
+}
+.checkmark {
+  cursor: pointer;
+}
