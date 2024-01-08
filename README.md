@@ -13,6 +13,6 @@ For interface design, I used SCSS (Sass) for color changes on the screen.
 
 ![theme alternative](./public/design/desktop-theme-alternative.png)
 
-
+Link to visit the web calculator by netlify: https://calculator-app-repository.netlify.app/
 
 Enjoy the calculator!!!👋👋
