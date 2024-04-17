@@ -1,8 +1,13 @@
-# Calculator app 
+# Calculator App 
 
-This basic calculator project was created using the React JavaScript library, along with the Vite quick build tool, for an efficient development environment.
+Calculator App is a simple and minimalist web application for a calculator. It allows users to perform basic arithmetic operations such as addition, subtraction, multiplication, and division accurately and precisely.
 
-For interface design, I used SCSS (Sass) for color changes on the screen.
+## Features
+
+- Perform addition, subtraction, multiplication, and division effortlessly.
+- Minimalist interface for smooth user experience.
+- Built with React.js and Vite for efficient development.
+- SCSS (Sass) utilized for customizable interface colors.
 
 
 ## Screenshot
@@ -15,4 +20,4 @@ For interface design, I used SCSS (Sass) for color changes on the screen.
 
 Link to visit the web calculator by netlify: https://calculator-app-repository.netlify.app/
 
-Enjoy the calculator!!!👋👋
+Feel free to explore the codebase and contribute to the project's growth and improvement. Happy calculating!!!👋👋
